@@ -6,12 +6,20 @@
     "configurations": [
 
         {
-            "name": "Python Debugger: Current File",
+            "name": "Byte Count",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
             "args": ["-c", "test.txt"]
+        },
+        {
+            "name": "Line Count",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["-l", "test.txt"]
         }
     ]
 }
